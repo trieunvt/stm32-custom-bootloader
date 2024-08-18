@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "group": "build",
+            "label": "Linux: Build And Load",
+            "command": "make && JFlash -openprjjflash.jflash -openbuild/${workspaceFolderBasename}.hex -erasechip -auto -startapp -exit"
+        }
+    ]
+}
